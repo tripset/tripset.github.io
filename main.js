@@ -148,18 +148,16 @@ function calculateAndDisplayRouteWithValues(directionsService, directionsDisplay
     travelMode: 'DRIVING'
   }, function(response, status) {
     if (status == google.maps.DirectionsStatus.OK) {
-      new google.maps.DirectionsRenderer({
-          map: map,
-          directions: response,
-          suppressMarkers: true
-      });
+  
+      directionsDisplay.setDirections(response);
+      directionsDisplay.setOptions( { suppressMarkers: true } );
 
     } else {
      window.alert('Directions request failed due to ' + status);
     }
     
   });
-  
+
 
 }
 
@@ -213,11 +211,11 @@ function changeIndex(item, to) {
 
   // Set index for each sortable
   sortables.forEach(function (sortable, index) {return sortable.setIndex(index);});
+
   changeValues()
   addMarkers()
-  console.log(updateValues)
   calculateAndDisplayRouteWithValues(directionsService, directionsDisplay, updateValues);
-  
+
 }
 
 function Sortable(element, index) {
