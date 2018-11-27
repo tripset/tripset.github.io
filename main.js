@@ -38,7 +38,7 @@ function addMarkers() {
     if (i == 0) {
       console.log('again')
       var first = new google.maps.MarkerImage(
-        'https://drive.google.com/uc?id=1wj1hf28Z9sbzwkbo52vjAovezvcv16zw',
+        './images/1.png',
         null, /* size is determined at runtime */
         null, /* origin is 0,0 */
         null, /* anchor is bottom center of the scaled image */
@@ -48,7 +48,7 @@ function addMarkers() {
       
     } else if (i == 1) {
       var second = new google.maps.MarkerImage(
-        'https://drive.google.com/uc?id=1GrKs2JFgpSLYEFe5LNJWDDQ1IitXnR1y',
+        './images/2.png',
         null, /* size is determined at runtime */
         null, /* origin is 0,0 */
         null, /* anchor is bottom center of the scaled image */
@@ -58,7 +58,7 @@ function addMarkers() {
       
     } else if (i == 2) {
       var third = new google.maps.MarkerImage(
-        'https://drive.google.com/uc?id=1gC4ljpbSM8apJyK5brBLIxXUeOxGTNoX',
+        './images/3.png',
         null, /* size is determined at runtime */
         null, /* origin is 0,0 */
         null, /* anchor is bottom center of the scaled image */
@@ -68,7 +68,7 @@ function addMarkers() {
       
     } else if (i == 3) {
       var fourth = new google.maps.MarkerImage(
-        'https://drive.google.com/uc?id=17hCcsa2_MSORZhyxoFun5bDV7OyAVfeS',
+        './images/4.png',
         null, /* size is determined at runtime */
         null, /* origin is 0,0 */
         null, /* anchor is bottom center of the scaled image */

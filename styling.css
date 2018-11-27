@@ -59,12 +59,12 @@
   
   @font-face {
     font-family: 'Circular';
-    src: url('../fonts/CircularStd-Black.woff');
+    src: url('./fonts/CircularStd-Black.woff');
   }
   
   @font-face {
     font-family: 'CircularStd-Book';
-    src: url('../fonts/CircularStd-Book.woff');
+    src: url('./fonts/CircularStd-Book.woff');
   }
   
   
@@ -115,25 +115,25 @@
       
   .item-content#dp {
     content: "";
-    background: white url('./dolores.png') 0px 9px scroll no-repeat !important;
+    background: white url('./images/dolores.png') 0px 9px scroll no-repeat !important;
     object-fit: contain;
   }
   
   .item-content#ggp {
     content: "";
-    background: white url('./golden.png') 0px 9px scroll no-repeat !important;
+    background: white url('./images/golden.png') 0px 9px scroll no-repeat !important;
     object-fit: contain;
   }
   
   .item-content#as {
     content: "";
-    background: white url('./academy.png') 0px 9px scroll no-repeat !important;
+    background: white url('./images/academy.png') 0px 9px scroll no-repeat !important;
     object-fit: contain;
   }
   
   .item-content#tp {
     content: "";
-    background: white url('./twin.png') 0px 9px scroll no-repeat !important;
+    background: white url('./images/twin.png') 0px 9px scroll no-repeat !important;
     object-fit: contain;
   }
       
