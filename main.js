@@ -23,7 +23,7 @@ function initMap() {
 
   directionsDisplay.setMap(map);
   
-  //changeValues()
+  changeValues()
   addMarkers()  
 
   calculateAndDisplayRouteWithValues(directionsService, directionsDisplay, updateValues);
@@ -31,8 +31,6 @@ function initMap() {
 }
 
 function addMarkers() {
-  console.log('here')
-  console.log(updateValues.length)
   for (var i = 0; i < updateValues.length; i++) {
     var pic;
     if (i == 0) {
@@ -178,6 +176,7 @@ function changeValues() {
 
     var numbers = listItems[i].innerText
     txt = txt.replace(/[0-9]/g, '');
+    txt = txt.trim();
     numbers = numbers.replace(/\D/g, '');
     var to_replace = '';
     console.log(txt)
