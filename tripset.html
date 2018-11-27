@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./styling.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/utils/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/CSSRulePlugin.min.js"></script>
+
+
+  </head>
+  <body>
+
+    <div id="wrapper">
+      <div id="top">tripset.</div>
+      
+      <div id='day'>Day 1</div>
+      
+      <section class="container">
+        <div class="list-item" value='Dolores Park, San Francisco, CA'>
+          <div class="item-content" id='dp'>
+            <span class="order">1</span>. Dolores Park
+          </div>
+        </div>
+        
+        <div class="list-item" value='Golden Gate Park, San Francisco, CA'>
+          <div class="item-content" id='ggp'>
+            <span class="order">2</span>. Golden Gate Park
+          </div>
+        </div>
+        
+        <div class="list-item" value='Academy of Sciences, San Francisco, CA'>
+          <div class="item-content" id='as'>
+            <span class="order">3</span>. Academy of Sciences
+          </div>
+        </div>
+        
+        <div class="list-item" value='Twin Peaks, San Francisco, CA'>
+          <div class="item-content" id='tp'>
+            <span class="order">4</span>. Twin Peaks
+          </div>
+        </div>
+      </section>
+
+      <div id="map"></div>
+    </div>
+
+    <script src="./main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbZ5Fnu4pAQstdHaoPqyXRl_EL29yZJoc&callback=initMap"
+    async defer></script>
+
+  </body>
+</html>

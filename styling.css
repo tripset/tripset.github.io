@@ -1,0 +1,147 @@
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+     
+  
+  html, body {
+   height: 100%;
+   background: #fcfcfc;
+  }
+  
+  #map {
+    height: 90%;
+    width: 70%;
+    bottom: 0;
+    right: 0;
+    position: fixed !important;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-top: auto;
+  }
+  
+  
+  #top {
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    margin-left: -10px;
+    margin-top: -10px;
+    margin-right: auto;
+    margin-bottom: auto;
+    background-color: orange;
+    color: black;
+    font-family: 'Circular';
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    font-size: 23px;
+    vertical-align: middle;
+    display: flex;
+    justify-content:center;
+    align-content:center;
+    flex-direction:column;
+    padding-left: 50px;
+    padding-top: 5px;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+  }
+  
+  #wrapper {
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  #map, #search {
+      height: 90%;
+  }
+  
+  
+  @font-face {
+    font-family: 'Circular';
+    src: url('../fonts/CircularStd-Black.woff');
+  }
+  
+  @font-face {
+    font-family: 'CircularStd-Book';
+    src: url('../fonts/CircularStd-Book.woff');
+  }
+  
+  
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  .container {
+    font-family: 'CircularStd-Book';
+    position: relative;  
+    top: 20%;
+    width: 28%;
+    height: 80%;
+    opacity: 0;
+    visibility: hidden;
+    
+  }
+  
+  .list-item {  
+    position: absolute;
+    top: 0;
+    left: 9%;  
+    height: 21%;
+    width: 85%;
+    
+  }
+
+  
+  .item-content:hover {
+    cursor: -webkit-grab; cursor: grab;
+  }
+  .item-content:active {
+    cursor: -webkit-grabbing; 
+    cursor: grabbing;
+  }
+  
+  .item-content {
+    height: 100%;
+    border: 0px solid rgba(123, 123, 123, 0.498039);
+    color: rgb(153, 153, 153);
+    padding-left: 53.5%;
+    padding-top: 6%;
+    font-size: 19px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0,0,0,0.2) 0px 1px 2px 0px;
+  }
+      
+  .item-content#dp {
+    content: "";
+    background: white url('./dolores.png') 0px 9px scroll no-repeat !important;
+    object-fit: contain;
+  }
+  
+  .item-content#ggp {
+    content: "";
+    background: white url('./golden.png') 0px 9px scroll no-repeat !important;
+    object-fit: contain;
+  }
+  
+  .item-content#as {
+    content: "";
+    background: white url('./academy.png') 0px 9px scroll no-repeat !important;
+    object-fit: contain;
+  }
+  
+  .item-content#tp {
+    content: "";
+    background: white url('./twin.png') 0px 9px scroll no-repeat !important;
+    object-fit: contain;
+  }
+      
+  #day {
+    position: absolute;
+    padding-top: 6.5%;
+    padding-left: 2.5%;
+    color: #E98466;
+    font-family: 'CircularStd-Book';
+    font-size: 16px;
+  }
